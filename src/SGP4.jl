@@ -11,7 +11,6 @@ const sgp4io = PyNULL()
 const earth_gravity = PyNULL()
 
 function __init__()
-    copy!(sgp4io, pyimport_conda("sgp4.io", "sgp4", "poliastro"))
     copy!(earth_gravity, pyimport("sgp4.earth_gravity"))
 end
 
