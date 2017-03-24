@@ -11,6 +11,7 @@ const sgp4io = PyNULL()
 const earth_gravity = PyNULL()
 
 function __init__()
+    copy!(sgp4io, pyimport("sgp4.io"))
     copy!(earth_gravity, pyimport("sgp4.earth_gravity"))
 end
 
